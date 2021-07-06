@@ -6,7 +6,7 @@ const firebaseConfig = {
   projectId: "whatsapp-clone-fb6b6",
   storageBucket: "whatsapp-clone-fb6b6.appspot.com",
   messagingSenderId: "355928647473",
-  appId: "1:355928647473:web:16295b55109bdc82d47210",
+  appId: "1:355928647473:web:16295b55109bdc82d47210"
 };
 
 const app = !firebase.apps.length
