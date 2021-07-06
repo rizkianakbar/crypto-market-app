@@ -3,44 +3,42 @@ import Head from "next/head";
 import styled from "styled-components";
 import { auth, provider } from "../firebase";
 
-function Login() {
-  const signIn = () => {
-    auth.signInWithPopup(provider).catch(alert);
-  };
-  return (
-    <Container>
-      <Head>
-        <title>login</title>
-      </Head>
-
-      <LoginContainer>
-        <Logo src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c543.png" />
-        <Button onClick={signIn} variant="outlined">
-          SIGNIN WITH GOOGLE
+function login() {
+    const signIn = () => {
+        auth.signInWithPopup(provider).catch(alert);
+    };
+    return (
+        <Container>
+            <Head>
+                <title>Login</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+            <LoginContainer>
+                <Logo src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-1.png" />
+                <Button variant="outlined" onClick={signIn}>
+                    Sign in with Google
         </Button>
-      </LoginContainer>
-    </Container>
-  );
+            </LoginContainer>
+        </Container>
+    );
 }
 
-export default Login;
+export default login;
 
 const Container = styled.div`
   display: grid;
   place-items: center;
-  background-color: whitesmoke;
   height: 100vh;
+  background-color: whitesmoke;
 `;
 const LoginContainer = styled.div`
   padding: 100px;
+  background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: white;
-  border-radius: 5px;
 `;
 const Logo = styled.img`
-  width: 200px;
   height: 200px;
+  width: 200px;
   margin-bottom: 50px;
 `;
