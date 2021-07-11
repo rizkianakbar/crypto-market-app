@@ -1,7 +1,6 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom';
-import { Card, CardBody, CardHeader, CardTitle, Col, Row } from 'reactstrap';
-import useFetch from '../../hooks/useFetch';
+import { Card, CardBody, Col, Row } from 'reactstrap';
 import './Main.css';
 
 const Main = ({ coins }) => {
