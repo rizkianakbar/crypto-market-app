@@ -16,12 +16,10 @@ function useFetch(url) {
         setLoading(false);
         //checking for multiple responses for more flexibility 
         //with the url we send in.
-        console.log(res.data);
         res.data && setData(res.data);
       })
       .catch(err => {
         setLoading(false)
-        console.log('fail');
         setError('An error occurred. Awkward..')
       })
     return () => {

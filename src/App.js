@@ -7,13 +7,11 @@ import Main from './components/MainContent/Main';
 function App() {
   const [disable, setDisable] = useState(false)
   const coins = JSON.parse(localStorage.getItem('data'));
-  console.log(coins)
   return (
     <>
       <Router>
         <Sidebar
           onCollapse={(active) => {
-            console.log(active);
             setDisable(active)
           }}
         />
