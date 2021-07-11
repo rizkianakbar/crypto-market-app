@@ -24,6 +24,7 @@ const Sidebar = (props) => {
   }
   useEffect(() => {
     props.onCollapse(btnSidebar)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [btnSidebar])
   // console.log(coins);
   const filteredCoins = coins.filter(coin => {
