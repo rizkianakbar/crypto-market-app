@@ -4,4 +4,21 @@
 
 .cards {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2px) !important;
+  background-color: #fff;
+
+  /* box-shadow: 5px 15px 5px 0px #000; */
+
+  margin-bottom: 10px;
+}
+
+.price-up {
+  color: #11d011;
+}
+
+.price-down {
+  color: #f00606;
+}
+
+.desc-text {
+  font-size: 14px;
 }

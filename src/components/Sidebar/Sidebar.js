@@ -26,7 +26,6 @@ const Sidebar = (props) => {
     props.onCollapse(btnSidebar)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [btnSidebar])
-  // console.log(coins);
   const filteredCoins = coins.filter(coin => {
     return coin.name.toLowerCase().includes(search.toLocaleLowerCase())
   })
@@ -65,7 +64,7 @@ const Sidebar = (props) => {
                 <li key={coin.id}>
                   <Link to={`/${coin.id}`}>
                     <i>
-                      <img src={coin.image} alt="crypto" onClick={onClickSymbol} />
+                      <img src={coin.image} alt="crypto" />
                     </i>
                     <span className="links_name">{coin.name}</span>
                   </Link>
